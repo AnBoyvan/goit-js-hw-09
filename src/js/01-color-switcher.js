@@ -11,8 +11,16 @@ refs.startBtn.addEventListener('click', () => {
   }, 1000);
 });
 
+refs.startBtn.addEventListener('click', () => {
+  refs.startBtn.setAttribute('disabled', 'disabled');
+});
+
 refs.stopBtn.addEventListener('click', () => {
   clearInterval(intervalId);
+});
+
+refs.stopBtn.addEventListener('click', () => {
+  refs.startBtn.removeAttribute('disabled');
 });
 
 function getRandomHexColor() {
