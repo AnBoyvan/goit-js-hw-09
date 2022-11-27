@@ -52,7 +52,7 @@ const timer = {
         counter -= 1000;
         updateTimerDisplay(timerComponents);
       }
-    }, 100);
+    }, 1000);
   },
 };
 
